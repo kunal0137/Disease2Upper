@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdfs:Class rdf:about="http://semoss.org/ontologies/Concept"/>
+<rdf:Property rdf:about="http://semoss.org/ontologies/Relation"/>
+<rdf:Description rdf:about="SEMOSS:ENGINE_METADATA">
+	<BASE_URI xmlns="CONTAINS:" rdf:resource="http://semoss.org/ontologies/Concept/"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/Disease_Camel/Disease_Camel">
+	<rdfs:subClassOf rdf:resource="http://semoss.org/ontologies/Concept"/>
+	<rdfs:Class rdf:resource="TYPE:VARCHAR(2000)"/>
+	<Conceptual xmlns="http://semoss.org/ontologies/Relation/" rdf:resource="http://semoss.org/ontologies/Concept/Disease_Camel"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/Disease_Upper/Disease_Upper">
+	<rdfs:subClassOf rdf:resource="http://semoss.org/ontologies/Concept"/>
+	<rdfs:Class rdf:resource="TYPE:VARCHAR(2000)"/>
+	<Conceptual xmlns="http://semoss.org/ontologies/Relation/" rdf:resource="http://semoss.org/ontologies/Concept/Disease_Upper"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Relation/Disease_Upper.Disease_Camel_FK.Disease_Camel.Disease_Camel">
+	<rdfs:subPropertyOf rdf:resource="http://semoss.org/ontologies/Relation"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/Disease_Camel/Disease_Camel">
+	<Disease_Upper.Disease_Camel_FK.Disease_Camel.Disease_Camel xmlns="http://semoss.org/ontologies/Relation/" rdf:resource="http://semoss.org/ontologies/Concept/Disease_Upper/Disease_Upper"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://semoss.org/ontologies/Concept/TimeStamp">
+	<TIME xmlns="ENGINE:">2018:03:02 18:59:11</TIME>
+</rdf:Description>
+
+</rdf:RDF>
